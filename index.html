@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- <script type="text/javascript" src="./assets/javascript/game.js"></script> -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+    
+    
+  </head>
+  <body  style="background: url('assets/images/1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;" >
+    <!-- nav bar starts here -->
+    <nav class="navbar navbar" style="text-align:center; font-size: xx-large; font-weight: 900;">Hangman</nav>
+      <div class="container-fluid">  
+    
+        <div class="navbar-header" style="color: red;">
+          <a class="navbar-brand" >  </a>
+        </div>
+      </nav>
+      
+      <!-- left side wells here,1st one is printing the unused words -->
+      <div class="container-fluid text-center" style=" padding-right:20px;  margin-left:15%;">
+        <div class="col-sm-2 sidenav" style="background-color: rgba(169, 163, 66, 0.5);">
+          <div class="well">
+            <p>Key Pressed: <span id="key"></span>
+          </p>
+        </div>
+        <!--  -->
+        <div class="well">
+          <p>Games: <span id="stat"> </span> </p>
+        </div>
+      </div>
+      <!-- center blank spaces to fill the words -->
+      <div class="container-fluid text-center" >
+        <div class="col-sm-6 sidenav" style="background-color:rgba(169, 163, 66, 0.5);">
+          <div class="well">
+            <p> <span id="demo"></span></p>
+            <!-- <p>empty: <span id="demo"></span> -->
+            
+          </div>
+                   
+          <div class="col-md-12" >
+            <div class="well"   style="background: url('assets/images/1.jpg') no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          -o-background-size: cover;
+          height:100%;">
+              <p style= color:red font-size:20px >   LET'S PLAY</p>
+              
+            </div>
+
+                                  
+            </textarea>
+              <textarea class="form-control" rows="3" id="remaining" style="text-align:center";>  </textarea>
+          </div></p>  </div>
+          <div class="col-sm-2 sidenav" style="background-color:rgba(169, 163, 66, 0.5);">
+            <div class="well">
+              <p><span id="won"> </span> </p>
+            </div>
+            <!-- intializing the key -->
+            <div class="well">
+              <button onclick="initilize()">Play Again</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="container-fluid text-center">
+        <p style=" font-size: 24px";>Oscar Awards  </p>
+                        
+      </footer>
+      
+      <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    </body>
+  </html>
